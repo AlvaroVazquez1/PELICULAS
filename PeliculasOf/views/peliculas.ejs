@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NESFLIS</title>
+    <!-- Agrega los estilos de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #111; /* Color de fondo negro */
+            color: white; /* Color del texto blanco */
+            font-weight: bold; /* Fuente más gruesa */
+            min-height: 100vh; /* Establece la altura mínima del cuerpo */
+            position: relative; /* Establece la posición relativa */
+        }
+        
+        .container {
+            max-width: 1200px; /* Ancho máximo del contenedor */
+            margin: 0 auto; /* Centra el contenedor horizontalmente */
+            padding: 50px 20px;
+        }
+        
+        .card {
+            background-color: #222; /* Color de fondo de las tarjetas */
+            color: white; /* Color del texto blanco */
+            transition: transform 0.3s ease-in-out; /* Transición suave de la transformación */
+        }
+
+        .card:hover {
+            transform: scale(1.1); /* Escala el card al 110% del tamaño original */
+        }
+        
+        .card-title {
+            color: white; /* Color del título de la tarjeta */
+        }
+        
+        .card-text {
+            color: white; /* Color del texto de la tarjeta */
+        }
+        
+        .btn-primary,
+        .btn-outline-primary {
+            color: white; /* Color del texto de los botones */
+            background-color: #007bff; /* Color de fondo del botón principal */
+            border-color: #007bff; /* Color del borde del botón principal */
+        }
+        
+        .btn-danger {
+            color: white; /* Color del texto del botón de eliminación */
+            background-color: #dc3545; /* Color de fondo del botón de eliminación */
+            border-color: #dc3545; /* Color del borde del botón de eliminación */
+        }
+        
+        /* Estilos para el footer */
+        footer {
+            position: absolute; /* Establece la posición absoluta */
+            bottom: 0; /* Lo coloca al final de la página */
+            width: 100%; /* Ocupa todo el ancho de la página */
+            background-color: #ff000029; /* Color de fondo del footer */
+            color: white; /* Color del texto del footer */
+            padding: 20px 0; /* Espaciado interno del footer */
+            text-align: center; /* Alineación del texto al centro */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <center><h1 style="font-size: 48px; font-weight: bold; color: red;">NESFLIS</h1></center>
+        
+        <!-- Agregar un nuevo formulario para la búsqueda -->
+        <form action="/Peliculas/buscar" method="GET" class="mb-3">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Buscar película" name="query">
+                <button class="btn btn-outline-primary" type="submit" style="background-color: #ff0000; border-color: #000000;">🔍︎Buscar</button>
+            </div>
+        </form>
+
+        <!-- Organiza los botones "Regresar", "+Agregar Película" e "Iniciar Sesión" en una fila -->
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <a href="/Peliculas" class="btn btn-outline-danger w-100">⮐Regresar</a>
+            </div>
+            <div class="col-md-4 mb-3">
+                <a href="/Peliculas/agregar" class="btn btn-outline-danger w-100">+Agregar Película</a>
+            </div>
+            <div class="col-md-4 mb-3">
+                <a href="/login" class="btn btn-danger w-100">👤Iniciar Sesión</a>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+            <% Peliculas.forEach(Pelicula => { %>
+                <div class="col mb-4">
+                    <div class="card h-100">
+                        <img src="<%= Pelicula.img %>" class="card-img-top" alt="<%= Pelicula.nombre %>">
+                        <div class="card-body">
+                            <h5 class="card-title"><%= Pelicula.nombre %></h5>
+                            <p class="card-text">Año: <%= Pelicula.año %></p>
+                            <p class="card-text">Director: <%= Pelicula.director %></p>
+                            <p class="card-text">Actores: <%= Pelicula.actores.join(', ') %></p>
+                            <!-- Agrega un botón para eliminar la película -->
+                            <button class="btn btn-danger deleteButton" data-id="<%= Pelicula._id %>">- Eliminar</button>
+                        </div>
+                    </div>
+                </div>
+            <% }); %>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        Creado por Alvaro Jasiel y Fernando Alonso
+        ©Derechos reservados Facultad de Telematica
+    </footer>
+
+    <!-- Agrega los scripts de Bootstrap al final del body para mejorar el rendimiento -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Agregar evento de clic a los botones de eliminar
+        document.querySelectorAll('.deleteButton').forEach(button => {
+            button.addEventListener('click', async () => {
+                // Obtener el ID de la película
+                const peliculaId = button.getAttribute('data-id');
+                // Mostrar confirmación antes de eliminar
+                const confirmacion = confirm('¿Estás seguro de eliminar esta película?');
+                if (confirmacion) {
+                    try {
+                        // Enviar solicitud para eliminar la película
+                        await fetch(`/Peliculas/${peliculaId}?_method=DELETE`, {
+                            method: 'POST'
+                        });
+                        // Mostrar alerta de película eliminada
+                        alert('Película eliminada');
+                        // Desaparecer la alerta después de 3 segundos
+                        setTimeout(() => {
+                            alert.style.display = 'none';
+                        }, 3000);
+                        // Recargar la página
+                        location.reload();
+                    } catch (error) {
+                        console.error('Error al eliminar la película:', error);
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

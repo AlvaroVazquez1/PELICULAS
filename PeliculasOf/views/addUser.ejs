@@ -1,0 +1,90 @@
+<!--original-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear cuenta</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #111;
+            color: red;
+            font-weight: bold;
+            background-image: url('https://media.tenor.com/y9n40ugzfIUAAAAC/neongridlol.gif');
+            background-size: cover;
+            background-position: center;
+            height: 100vh; /* Establece la altura del cuerpo como el 100% del viewport */
+            display: flex;
+            justify-content: center; /* Centra horizontalmente los elementos */
+            align-items: center; /* Centra verticalmente los elementos */
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 50px 20px;
+            text-align: center;
+            border: 2px solid red;
+            border-radius: 10px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            background-color: rgba(0, 0, 0, 0.64);
+        }
+
+        .form-control {
+            background-color: black;
+            color: red;
+            border: 2px solid red;
+            font-size: 1.2em;
+        }
+
+        .form-label {
+            color: red;
+            font-size: 1.2em;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .btn-primary {
+            background-color: red;
+            border-color: red;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-size: 1.2em;
+        }
+
+        h1 {
+            color: red;
+            font-weight: bold;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Crear cuenta</h1>
+        <form action="/addUser" method="POST">
+            <div class="mb-3">
+                <label for="nombreUsuario" class="form-label">Nombre de usuario:</label>
+                <input type="text" id="nombreUsuario" name="nombreUsuario" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="edad" class="form-label">Edad:</label>
+                <input type="number" id="edad" name="edad" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="tipo" class="form-label">Tipo:</label>
+                <select id="tipo" name="tipo" class="form-control" required>
+                    <option value="Usuario">Usuario</option>
+                    <option value="Administrador">Administrador</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Contraseña:</label>
+                <input type="password" id="password" name="password" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Registrarse</button>
+        </form>
+    </div>
+</body>
+</html>
