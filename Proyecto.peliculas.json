@@ -1,0 +1,233 @@
+[{
+  "_id": {
+    "$oid": "6629b83b8ecd50f4c59dd532"
+  },
+  "nombre": "Interestelar",
+  "año": 2014,
+  "director": "Christopher Nolan",
+  "actores": [
+    "Matthew McConaughey",
+    "Anne Hathaway",
+    "Jessica Chastain"
+  ],
+  "img": "https://mx.web.img2.acsta.net/pictures/19/01/28/01/13/3672733.png"
+},
+{
+  "_id": {
+    "$oid": "6629b83b8ecd50f4c59dd533"
+  },
+  "nombre": "El Padrino",
+  "año": 1972,
+  "director": "Francis Ford Coppola",
+  "actores": [
+    "Marlon Brando",
+    "Al Pacino",
+    "James Caan"
+  ],
+  "img": "https://es.web.img3.acsta.net/pictures/18/06/12/12/12/0117051.jpg?coixp=49&coiyp=27"
+},
+{
+  "_id": {
+    "$oid": "6629b83b8ecd50f4c59dd534"
+  },
+  "nombre": "Titanic",
+  "año": 1997,
+  "director": "James Cameron",
+  "actores": [
+    "Leonardo DiCaprio",
+    "Kate Winslet",
+    "Billy Zane"
+  ],
+  "img": "https://m.media-amazon.com/images/I/811lT7khIrL._AC_UF894,1000_QL80_.jpg"
+},
+{
+  "_id": {
+    "$oid": "6629b83b8ecd50f4c59dd536"
+  },
+  "nombre": "Forrest Gump",
+  "año": 1994,
+  "director": "Robert Zemeckis",
+  "actores": [
+    "Tom Hanks",
+    "Robin Wright",
+    "Gary Sinise"
+  ],
+  "img": "https://m.media-amazon.com/images/M/MV5BNWIwODRlZTUtY2U3ZS00Yzg1LWJhNzYtMmZiYmEyNmU1NjMzXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg"
+},
+{
+  "_id": {
+    "$oid": "6629b83b8ecd50f4c59dd537"
+  },
+  "nombre": "El Club de la Pelea",
+  "año": 1999,
+  "director": "David Fincher",
+  "actores": [
+    "Brad Pitt",
+    "Edward Norton",
+    "Helena Bonham Carter"
+  ],
+  "img": "https://zoonpolitikonmx.files.wordpress.com/2013/06/figth2.jpg?w=640"
+},
+{
+  "_id": {
+    "$oid": "6629b83b8ecd50f4c59dd538"
+  },
+  "nombre": "El Rey León",
+  "año": 1994,
+  "director": "Roger Allers, Rob Minkoff",
+  "actores": [
+    "Matthew Broderick",
+    "Jeremy Irons",
+    "James Earl Jones"
+  ],
+  "img": "https://lumiere-a.akamaihd.net/v1/images/image_8b5ca578.jpeg?region=0,0,540,810"
+},
+{
+  "_id": {
+    "$oid": "6629b83b8ecd50f4c59dd539"
+  },
+  "nombre": "La La Land",
+  "año": 2016,
+  "director": "Damien Chazelle",
+  "actores": [
+    "Ryan Gosling",
+    "Emma Stone",
+    "John Legend"
+  ],
+  "img": "https://es.web.img3.acsta.net/pictures/16/11/30/17/44/581119.jpg"
+},
+{
+  "_id": {
+    "$oid": "6629b83b8ecd50f4c59dd53a"
+  },
+  "nombre": "Matrix",
+  "año": 1999,
+  "director": "The Wachowskis",
+  "actores": [
+    "Keanu Reeves",
+    "Laurence Fishburne",
+    "Carrie-Anne Moss"
+  ],
+  "img": "https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg"
+},
+{
+  "_id": {
+    "$oid": "663553e80abb389afde2c944"
+  },
+  "nombre": "Spiderman A través del Spider-Verso",
+  "año": 2023,
+  "director": "Joaquim Dos Santos, Kemp Powers, Justin K. Thompson",
+  "actores": [
+    "Oscar Isaac",
+    " Hailee Steinfeld",
+    " Shameik Moore"
+  ],
+  "img": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQBLKcm8i9LQcVWn18C5CdVYbYGGk8SrZ_Ut1jzFAP6dY1WfdAi",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66381ceb7ff521ae0c1d54bb"
+  },
+  "nombre": "Son como niños",
+  "año": 2010,
+  "director": "Dennis Dugan",
+  "actores": [
+    "Adam Sandler",
+    " Salma Hayek",
+    " Kevin James"
+  ],
+  "img": "https://m.media-amazon.com/images/S/pv-target-images/7b86f2a7e80941d97c265348873a82c73450c0286ed1d1eeb7d86440ec707de5.jpg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66381da07ff521ae0c1d54c3"
+  },
+  "nombre": "El Hombre Araña 3",
+  "año": 2007,
+  "director": "Sam Raimi",
+  "actores": [
+    "Tobey Maguire",
+    " Kirsten Dunst",
+    " James Franco"
+  ],
+  "img": "https://moviepostermexico.com/cdn/shop/products/10K1Fva-TRHz1117h-Um2wg_1024x1024@2x.png?v=1602597436",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66381eba7ff521ae0c1d54c8"
+  },
+  "nombre": "Five Nights at Freddy's: la pelicula",
+  "año": 2023,
+  "director": "Emma Tammi",
+  "actores": [
+    "Josh Hutcherson",
+    " Elizabeth Lail",
+    " Matthew Lillard",
+    " Piper Rubio"
+  ],
+  "img": "https://m.media-amazon.com/images/S/pv-target-images/d15daac51229974e69252ca29f4e920e1e128f28e1dfa73d55e1d1fdea6ce819.jpg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66392bf2ea26d98283e70065"
+  },
+  "nombre": "Batman: el caballero de la noche",
+  "año": 2008,
+  "director": " Christopher Nolan",
+  "actores": [
+    "Christian Bale",
+    " Heath Ledger",
+    " Gary Oldman"
+  ],
+  "img": "https://m.media-amazon.com/images/I/71qE+TogE1L._AC_UF894,1000_QL80_.jpg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66392d13ea26d98283e70069"
+  },
+  "nombre": "El lobo de Wall Street",
+  "año": 2013,
+  "director": "Martin Scorsese",
+  "actores": [
+    " Leonardo DiCaprio",
+    " Margot Robbie",
+    " Tobey Maguire"
+  ],
+  "img": "https://m.media-amazon.com/images/I/91m2MB2lYFL._AC_UF894,1000_QL80_.jpg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66392daeea26d98283e7006c"
+  },
+  "nombre": "Barbie",
+  "año": 2023,
+  "director": "Greta Gerwig",
+  "actores": [
+    "Margot Robbie",
+    " Ryan Gosling",
+    " Emma Mackey"
+  ],
+  "img": "https://es.web.img2.acsta.net/pictures/23/07/20/11/29/5479684.jpg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66392e70ea26d98283e7006f"
+  },
+  "nombre": "Hulk",
+  "año": 2003,
+  "director": "Ang Lee",
+  "actores": [
+    "Eric Bana",
+    " Shrek",
+    " Jennifer Connelly"
+  ],
+  "img": "https://lh4.googleusercontent.com/proxy/UZKojtaTqK-ZlmEHBBFhQcC2-g1YQ-PNn3SWMIesNu1tCYDGUtbf5KKbLqdhVRtIDM9szpYae0fPfB1VwWIHVKDrNe0_ynnzZ36V0w",
+  "__v": 0
+}]

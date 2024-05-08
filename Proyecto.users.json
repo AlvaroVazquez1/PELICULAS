@@ -1,0 +1,40 @@
+[{
+  "_id": {
+    "$oid": "662ff23bfa98b0a86da4a06b"
+  },
+  "id": "1234567890",
+  "nombre": "Alonso",
+  "edad": 21,
+  "tipo": "Usuario",
+  "password": "12345"
+},
+{
+  "_id": {
+    "$oid": "662ff253fa98b0a86da4a06d"
+  },
+  "id": "1234567890",
+  "nombre": "Alvaro",
+  "edad": 20,
+  "tipo": "Administrador",
+  "password": "123456"
+},
+{
+  "_id": {
+    "$oid": "663a8c7b447c0d26b93078e2"
+  },
+  "nombre": "andy",
+  "edad": 20,
+  "tipo": "Usuario",
+  "password": "12345",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663a8e21447c0d26b93078f3"
+  },
+  "nombre": "Bety",
+  "edad": 20,
+  "tipo": "Usuario",
+  "password": "12345",
+  "__v": 0
+}]
