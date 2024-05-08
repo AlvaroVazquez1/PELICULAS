@@ -47,7 +47,7 @@ app.post('/login', async (req, res) => {
         if (!usuario || usuario.password !== contraseña) {
             return res.status(401).send('Nombre de usuario o contraseña incorrectos');
         }
-        // Aquí podrías iniciar sesión de alguna manera (por ejemplo, utilizando cookies o sesiones)
+        
         res.redirect('/Peliculas');
     } catch (error) {
         res.status(500).send('Error al iniciar sesión');
@@ -72,8 +72,7 @@ app.get('/Peliculas/agregar', (req, res) => {
 
 // Ruta para agregar una nueva película
 app.post('/Peliculas/agregar', async (req, res) => {
-    // Aquí deberías tener el código para guardar la nueva película en la base de datos
-    // Por ejemplo:
+    
     const nuevaPelicula = new Pelicula({
         nombre: req.body.nombre,
         año: req.body.año,
@@ -96,8 +95,7 @@ app.get('/addUser', (req, res) => {
 
 // Ruta para agregar un nuevo usuario
 app.post('/addUser', async (req, res) => {
-    // Aquí deberías tener el código para guardar el nuevo usuario en la base de datos
-    // Por ejemplo:
+    
     const nuevoUsuario = new Usuario({
         nombre: req.body.nombreUsuario,
         edad: req.body.edad,
@@ -123,7 +121,7 @@ app.post('/Peliculas/:id', async (req, res) => {
             res.status(500).send('Error al borrar la película');
         }
     } else {
-        // Cualquier otra lógica que necesites aquí
+       
     }
 });
 
